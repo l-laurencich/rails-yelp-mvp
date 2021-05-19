@@ -1,0 +1,51 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+
+li{
+  padding: 10px 25px;
+}
+li:hover{
+  background-color: rgb(228, 228, 228);
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  border-bottom: 1px solid darkgray;
+  padding: 0px 25px;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(44, 44, 44) !important;
+}
+
+a:hover{
+  font-size: large;
+}
+
+.description {
+  border-bottom: 0.5px solid grey;
+}
+
+.container{
+  width: 50%;
+  margin: 100px auto;
+  
+}
