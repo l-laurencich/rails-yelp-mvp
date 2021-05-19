@@ -1,10 +1,15 @@
 <div class="container">
   <h2>Check out these restaurants near you:</h2>
 
-  <ul>
-  <% @restaurants.each do |restaurant| %>
-      <li id="restaurant"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <ul> 
+    
+      <% @restaurants.each do |restaurant| %>
+      <div class="card">
+        <li id="restaurant"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      </div>
     <% end %>
+    
+  
   </ul>
 
 
